@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+<head>
     <meta charset="utf-8"/>
     <title>Functions: Task 2</title>
     <style>
-      p {
-        color: purple;
-        margin: 0.5em 0;
-      }
+        p {
+            color: purple;
+            margin: 0.5em 0;
+        }
 
-      * {
-        box-sizing: border-box;
-      }
+        * {
+            box-sizing: border-box;
+        }
 
-      canvas {
-        border: 1px solid black;
-      }
+        canvas {
+            border: 1px solid black;
+        }
     </style>
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
+    <link rel="stylesheet" href="../styles.css"/>
+</head>
 
-  <body>
+<body>
 
-    <section class="preview">
+<section class="preview">
 
-    </section>
+</section>
 
-    <canvas width="480" height="320">
+<canvas width="480" height="320">
 
-    </canvas>
+</canvas>
 
-  </body>
-  <script>
+</body>
+<script>
     const canvas = document.querySelector('canvas');
     const ctx = canvas.getContext('2d');
 
@@ -42,10 +42,16 @@
     const color = 'blue';
 
     // Add your code here
+    function drawRectangle() {
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(x, y, width, height);
+        section.append(canvas);
+    }
 
+    drawRectangle();
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
-  </script>
+</script>
 
 </html>

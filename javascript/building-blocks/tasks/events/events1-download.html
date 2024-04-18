@@ -30,7 +30,13 @@
 
   <script>
     const btn = document.querySelector('.off');
-
+    btn.addEventListener("click", () => {
+      if (btn.innerHTML.trim() === 'Machine is off') {
+        btn.innerHTML = "Machine is on";
+      }else {
+        btn.innerHTML = "Machine is off";
+      }
+    })
     // Add your code here
 
   </script>
